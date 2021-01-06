@@ -1,67 +1,82 @@
-body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-
-
-}
-ul {
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    box-sizing: border-box;
+}
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    margin-bottom: 80px;
+}
+
+ ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+ul li {
+    padding: 0 15px;
+    list-style: none;
+}
+ ul li a {
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    transition: .5s;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: tomato;
+    padding: 7px 11px;
+    border-radius: 5px;
+}
+
+h1 {
     font-size: 50px;
-
 }
-h2{
+
+h2 {
     font-size: 40px;
-}
-p{
-  color: dimgray; 
+    color: orange;
 }
 
-.orange-highlight{
-    color:orange;
-
+p {
+    color: dimgray;
 }
-.half-width{
+
+/* .orange-highlight {
+    color: orange;
+
+} */
+
+.half-width {
     width: 40%;
-    float:left;
+    float: left;
     margin-left: 5%;
     padding-left: 2%;
-
 }
-.half-width img{
+
+.half-width img {
     width: 100%;
 }
-.top-banner{
-    background-image: url("images/top-banner.png")
-    background-repeat: no repeat ;
+
+.top-banner {
+    background-image: url("images/top-banner.png");
 
 }
-section{
+
+section {
     height: 500px;
     padding-bottom: 150px;
 }
-.link-button{
+
+.link-button {
     text-decoration: none;
     background-image: linear-gradient(45deg, lightsalmon, tomato);
     padding: 10px 20px;
@@ -70,15 +85,61 @@ section{
     font-weight: 700;
 
 }
-.project area{
-    width: 20%;
-    height: 30%;
-    float: left;
-}
-h3{
-    text-align: center;
-    margin:0;
-    padding:0;
+
+.image-tab {
+    margin: 0 5%;
+    padding-left: 2%;
 }
 
- 
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.all-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.box {
+    height: 400px;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.box img {
+    width: 100%;
+}
+
+section.inquory {
+    background-color: rgb(141, 141, 141);
+    position: relative;
+    width: 700px;
+    height: auto;
+    margin: 120px  auto 120px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding:  50px;
+
+}
+
+.inquory p{
+    color: white;
+    font-size: 2rem;
+}
+
+.inquory img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+span{
+    color: orangered;
+
+}
